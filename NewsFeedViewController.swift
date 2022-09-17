@@ -55,10 +55,9 @@ class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
   
   func displayData(viewModel: NewsFeed.Model.ViewModel.ViewModelData) {
       switch viewModel{
-      case .some:
-          print(".some ViewController")
-      case .displayNewsFeed:
-          print(".displayNewsFeed ViewController")
+      case .displayNewsFeed(feedViewModel: let feedViewModel):
+          self.feedViewModel = feedViewModel
+          table.reloadData()
       }
 
   }
