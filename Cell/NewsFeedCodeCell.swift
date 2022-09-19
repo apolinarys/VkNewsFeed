@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol NewsFeedCodeCellDelegate: class {
+    func revealPost(for cell: NewsFeedCodeCell)
+}
+
 final class NewsFeedCodeCell: UITableViewCell {
     
     static let reuseId = "NewsFeedCodeCell"
+    
+    weak var delegate: NewsFeedCodeCellDelegate?
     
     //first layer
     
@@ -176,6 +182,8 @@ final class NewsFeedCodeCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        moreTextButton.addTarget(self, action: #selector(moreTextButtonTouched), for: .touchUpInside)
+        
         overlayFirstLayer()
         overlaySecondLayer()
         overlayThirdLayer()
@@ -183,6 +191,10 @@ final class NewsFeedCodeCell: UITableViewCell {
         
         backgroundColor = UIColor.gray
         
+    }
+    
+    @objc func moreTextButtonTouched () {
+        delegate?.revealPost(for: self)
     }
     
     override func prepareForReuse() {
@@ -207,6 +219,7 @@ final class NewsFeedCodeCell: UITableViewCell {
         selectionStyle = .none
         
         postLabel.frame = viewModel.sizes.postLabelFrame
+        moreTextButton.frame = viewModel.sizes.moreTextButtonFrame
         postImageView.frame = viewModel.sizes.attachmentFrame
         bottomView.frame = viewModel.sizes.bottomView
         

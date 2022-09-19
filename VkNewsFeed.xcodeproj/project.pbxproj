@@ -23,7 +23,7 @@
 		FAD2C75D28D4AF8B00B3CE3F /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2C75C28D4AF8B00B3CE3F /* NewsFeedCell.swift */; };
 		FAD2C75F28D4AFD300B3CE3F /* NewsFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD2C75E28D4AFD300B3CE3F /* NewsFeedCell.xib */; };
 		FAD2C76228D5FBBE00B3CE3F /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2C76128D5FBBE00B3CE3F /* WebImageView.swift */; };
-		FAD2C76428D61C1C00B3CE3F /* NewsFeedCellLayoutCompilator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2C76328D61C1C00B3CE3F /* NewsFeedCellLayoutCompilator.swift */; };
+		FAD2C76428D61C1C00B3CE3F /* NewsFeedCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2C76328D61C1C00B3CE3F /* NewsFeedCellLayoutCalculator.swift */; };
 		FAD2C76628D62BF400B3CE3F /* String + Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2C76528D62BF400B3CE3F /* String + Height.swift */; };
 		FAD2C76828D7755900B3CE3F /* NewsFeedCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2C76728D7755900B3CE3F /* NewsFeedCodeCell.swift */; };
 		FAD2C76A28D77BF700B3CE3F /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2C76928D77BF700B3CE3F /* Constraints.swift */; };
@@ -55,7 +55,7 @@
 		FAD2C75C28D4AF8B00B3CE3F /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		FAD2C75E28D4AFD300B3CE3F /* NewsFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsFeedCell.xib; sourceTree = "<group>"; };
 		FAD2C76128D5FBBE00B3CE3F /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
-		FAD2C76328D61C1C00B3CE3F /* NewsFeedCellLayoutCompilator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCellLayoutCompilator.swift; sourceTree = "<group>"; };
+		FAD2C76328D61C1C00B3CE3F /* NewsFeedCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCellLayoutCalculator.swift; sourceTree = "<group>"; };
 		FAD2C76528D62BF400B3CE3F /* String + Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Height.swift"; sourceTree = "<group>"; };
 		FAD2C76728D7755900B3CE3F /* NewsFeedCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCodeCell.swift; sourceTree = "<group>"; };
 		FAD2C76928D77BF700B3CE3F /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			children = (
 				FAD2C75C28D4AF8B00B3CE3F /* NewsFeedCell.swift */,
 				FAD2C75E28D4AFD300B3CE3F /* NewsFeedCell.xib */,
-				FAD2C76328D61C1C00B3CE3F /* NewsFeedCellLayoutCompilator.swift */,
+				FAD2C76328D61C1C00B3CE3F /* NewsFeedCellLayoutCalculator.swift */,
 				FAD2C76728D7755900B3CE3F /* NewsFeedCodeCell.swift */,
 				FAD2C76B28D7831000B3CE3F /* Constants.swift */,
 			);
@@ -337,7 +337,7 @@
 				FA6EBFB928D4936500A4B5E7 /* NewsFeedModels.swift in Sources */,
 				FAD2C75D28D4AF8B00B3CE3F /* NewsFeedCell.swift in Sources */,
 				FA6EBFBA28D4936500A4B5E7 /* NewsFeedViewController.swift in Sources */,
-				FAD2C76428D61C1C00B3CE3F /* NewsFeedCellLayoutCompilator.swift in Sources */,
+				FAD2C76428D61C1C00B3CE3F /* NewsFeedCellLayoutCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
